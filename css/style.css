@@ -1,0 +1,340 @@
+/* ? Start Root for anything*/
+:root {
+  --main-color : #336699;
+  --dark-main-color :  #335577;
+  --light-main-color: #3377AA;
+}
+/* ? End Root for anything*/
+/* ? Start Css globel reset */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 500px;
+}
+ul {
+  list-style: none;
+}
+button,
+a,
+li {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* ? End Css globel reset */
+
+/* ? Start landing_page */
+.landing_page {
+  background-image: url("/img/infinite-loop-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  width: 100%;
+  height: 100vh;
+  /* padding: 0; */
+}
+.landing_page .container {
+  position: relative;
+  width: calc(100% - 15px);
+  height: 100vh;
+  box-sizing: border-box;
+}
+/* ? Start NavBar */
+nav {
+  position: fixed; 
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 62px;
+  padding: 8px 16px;
+  width: 100%;
+  z-index: 5;
+}
+nav  .logo {
+  width: 500px;
+  text-align: start;
+}
+@media (max-width:768px) {
+  nav  .logo {
+    min-width: fit-content;
+  }
+  nav  .logo a {
+    color: white;
+    font-weight: bold;
+    font-size: 22.4px;
+  }
+}
+nav  .logo a {
+color: white;
+font-weight: bold;
+font-size: 22.4px;
+}
+nav  .links {
+  /* width: 100%; */
+  height: 100%;
+  flex: 1;
+  /* min-width: 500px; */
+}
+@media (max-width:1024px) {
+  nav  .links {
+    /* width: 100%; */
+    height: 100%;
+    min-width: none;
+  }
+}
+nav  .links ul {
+ display: flex;
+ align-items: center;
+ height: 100%;
+ /* min-width: fit-content ; */
+ flex: 1;
+ /* justify-content: end; */
+}
+@media (max-width:1024px) {
+  nav  .links ul {
+    justify-content: end;
+  }
+}
+nav  .links ul li {
+  /* min-width: calc(fit-content + 20px); */
+  margin: 5px auto;
+  width: 158px;
+  padding: 15px 15px;
+}
+@media (max-width:1024px) {
+  nav  .links ul li {
+    display: none; 
+  }
+}
+nav  .links ul li a {
+ color: white;
+ font-size: 20px;
+ 
+}
+nav  .links ul li:hover {
+ background-color: var(--main-color) ;
+}
+.links .burger_menu {
+  position: relative;
+  display: none;
+  width: 50px; 
+  /* height: 100%; */
+  font-size: 16px;
+  color: white;
+  padding: 5px ;
+  border: 1px solid white;
+  border-radius: 7px;
+}
+
+@media (max-width:1024px) {
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .links .burger_menu {
+    display: block;
+  }
+}
+.none {
+  display:none;
+}
+.mobile {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  list-style: none;
+  top: 28px;
+  right: 0%;
+  width: 250px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+}
+.mobile a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: grey;
+  padding: 20px;
+}
+.mobile a:hover {
+  background-color: #336699;
+  color: white;
+  padding: 20px;
+  border: 1px solid #336699;
+  border-radius: 15px;
+}
+.active_navBar {
+  background-color: white ;
+}
+.active_navBar .links ul li a {
+  color: var(--main-color);
+  font-weight: 500;
+}
+.active_navBar .logo h3 a {
+  color: var(--main-color);
+}
+.active_navBar .links ul li:hover {
+  color: var(--main-color);
+}
+.active_navBar .links ul li:hover a {
+  color: white;
+}
+/* ? End NavBar */
+
+
+/* ? Start Hero Section */
+.hero_section {
+  position: absolute; 
+  height: calc(100vh ); 
+  width: calc(100% - 15px);
+  display: grid;
+  place-content: center ;
+}
+.hero_content {
+  display: flex;
+  flex-direction: column;
+}
+.hero_content .hero_main_text{
+ color: white;
+ text-align: center;
+ padding-bottom: 40px;
+}
+.hero_content .hero_main_text h1{
+  font-size: 56px;
+  font-weight: 500;
+  margin: 10px 0px;
+}
+.hero_content .hero_main_text p {
+ font-size: 20px;
+ line-height: 1.6;
+}
+.hero_content .hero_arrow_down {
+  text-align: center;
+}
+.hero_content .hero_arrow_down i {
+ border: 1px solid var(--main-color);
+ border-radius: 10px;
+ background-color: var(--main-color) ;
+ font-size: 40px;
+ color: white;
+ padding: 20px 40px;
+}
+/* ? End Hero Section */
+
+/* ? End landing_page */
+
+/* ? Start What We Do */
+.what_we_do {
+  height: 100vh;
+  width: 100%;
+  padding: 100px 0px;
+}
+.what_we_do .container .main_text {
+  padding-bottom:100px;
+}
+.what_we_do .container .main_text h3 {
+  padding-bottom: 50px;
+  color: var(--main-color);
+  font-size: 41.6px;
+  font-weight: 400;
+}
+.what_we_do .container .main_text p {
+  color: grey;
+  font-size: 19.2px;
+  line-height: 1.8;
+}
+@media(max-width:992px) {
+  .what_we_do .container .main_text  {
+    text-align: center;
+  }
+  .what_we_do .container .main_text h3 {
+    font-size: 36.6.6px;
+  }
+  .what_we_do .container .main_text p {
+    font-size: 14.2px;
+  }
+}
+.what_we_do .container .boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-column-gap: 40px;
+  grid-row-gap: 60px;
+}
+.what_we_do .container .boxes .box {
+  display: flex;
+}
+.what_we_do .container .boxes .box .icon{
+  padding: 0 20px;
+  color: var(--light-main-color);
+  font-size: 19.2px;
+}
+.what_we_do .container .boxes .box .icon_text{
+  color: var(--light-main-color);
+}
+.what_we_do .container .boxes .box .icon_text h3{
+  color: var(--light-main-color);
+  font-weight: 500;
+  font-size: 32px;
+  padding-bottom: 15px;
+}
+.what_we_do .container .boxes .box .icon_text p {
+  line-height: 1.6;
+  color: grey;
+  font-size: 19.2px;
+  padding-bottom: 25px;
+}
+.what_we_do .container .boxes .box .icon_text button {
+  padding: 14px 30px;
+  background-color: var(--light-main-color);
+  border: 0px;
+  color: white;
+}
+@media(max-width:992px) {
+  .what_we_do .container .boxes .box {
+    justify-content: center;
+  }
+  .what_we_do .container .boxes .box .icon_text h3{
+    font-size: 27px;
+  }
+  .what_we_do .container .boxes .box .icon_text p {
+    font-size: 14.2px;
+    max-width: 250px;
+  }
+}
+/* ? End What We Do */
