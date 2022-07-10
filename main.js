@@ -26,3 +26,76 @@ window.addEventListener("scroll", () => {
 })
 
 // ? Functions
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    centerSlide: 'true',
+    fade: 'true',
+    gragCursor: 'true',
+    // loop: true,
+    // loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      // dynamicBullets: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      520: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      950: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+var swiper = new Swiper(".mySwiper1", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    centerSlide: 'true',
+    fade: 'true',
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      520: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      720: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      950: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+    },
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+  });
