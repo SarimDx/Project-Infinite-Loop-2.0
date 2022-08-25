@@ -774,13 +774,15 @@ nav .links ul li:hover {
   font-size: 18px;
 }
 
-.contact .container .contact_me .input textarea.main-input {
-  height: 120px;
-}
 
 .contact .container .contact_me .input .main-input {
   color: var(--writing-main-color);
 }
+
+.contact .container .contact_me .input textarea.main-input {
+  height: 120px;
+}
+
 
 .contact .container .contact_me .input textarea.main-input::placeholder {
   padding-top: 15px;
@@ -836,3 +838,75 @@ nav .links ul li:hover {
 }
 
 /* ? End Contact Us */
+
+/* ? Start SignUp */
+/* .signUp {
+  background-image: url(../img/infinite-loop-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.signUp .container .main_text {
+  padding-bottom: 20px;
+}
+
+.signUp .container .main_text h3 {
+  text-align: center;
+  padding: 80px 0 40px 0;
+  color: var(--writing-main-color);
+  font-size: 42px;
+  font-weight: 1;
+}
+
+
+
+
+.signUp .container .contact_me input[type="submit"] {
+  background-color: var(--main-color);
+  color: var(--writing-main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  height: 50px;
+  width: 120px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.signUp .container .contact_me input[type="submit"]:hover {
+  background-color: var(--light-main-color);
+  border-color: var(--writing-main-color);
+}
+
+.signUp .container .contact_me .input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.signUp .container .contact_me .input .main-input {
+  background-color: white;
+  border: 1px solid var(--writing-main-color);
+  border-radius: 5px;
+  height: 46px;
+  margin-bottom: 40px;
+  width: 450px;
+}
+
+.signUp .container .contact_me .input .main-input::placeholder {
+  /* color: var(--writing-main-color)); */
+padding-left: 15px;
+font-size: 18px;
+}
+
+.signUp .container .contact_me .input .main-input {
+  color: var(--writing-main-color);
+}
+
+*/
+/* ? End SignUp */
